@@ -1,224 +1,215 @@
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+<!DOCTYPE html>
+<html lang="en">
 
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38ddda27d9.js" crossorigin="anonymous"></script>
+    <title>Personal Website</title>
+</head>
 
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>UI/UX Designer</p>
-            <h1>Hi, i'm <span>Pravin</span><br> From India</h1>
-        </div>
-    </div>
-</div>
+<body class="bg-gray-100">
 
-<!-----------------------------------About----------------------------------------->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/ADS_1364 copy.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ipsum placeat id dolores pariatur deserunt repellat officia hic,
-                    minus quidem doloremque cupiditate nesciunt vitae similique, numquam minima.
-                    Tempore tempora inventore sint mollitia in adipisci iure libero facere ut vitae eum voluptatem
-                    quisquam,
-                    veritatis maxime assumenda similique fuga dolores optio reprehenderit. Perspiciatis.
-                </p>
-                <div class="tab-title">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links onclick=" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
-                <div class="tab-content active-tab" id="Skills">
-                    <ul>
-                        <li><span>UI/UK</span><br>Designing Web/App Interface</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/ios Apps</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="Experience">
-                    <ul>
-                        <li><span>2022 - Curent</span><br>UI/US Design Traning at Google</li>
-                        <li><span>2019-2021</span><br>Team lead at Microsot</li>
-                        <li><span>2017 - 2019</span><br>UI/UX Design Executive ai Coin Digital Ltd.</li>
-                        <li><span>2016 - 2017</span><br>Internship at Ekart eCommerse.</li>
-                    </ul>
-                </div>
-                <div class="tab-content" id="Education">
-                    <ul>
-                        <li><span>2022</span><br>UI/UX Design Traning at ET Institute</li>
-                        <li><span>2019</span><br>MCA from MIT Mumbai </li>
-                        <li><span>2017 Development</span><br>BCA from Pune University</li>
-                    </ul>
-                </div>
+    <div id="header" class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex justify-between items-center">
+                <img src="images/logo.png" class="logo w-24" alt="Logo">
+                <ul id="sidemenu" class="hidden md:flex space-x-4">
+                    <li><a href="#header" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-500">About</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-500">Services</a></li>
+                    <li><a href="#portfolio" class="text-gray-700 hover:text-blue-500">Portfolio</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a></li>
+                    <i class="fa-solid fa-xmark cursor-pointer" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars cursor-pointer md:hidden" onclick="openmenu()"></i>
+            </nav>
+            <div class="text-center mt-6">
+                <p class="text-gray-600">UI/UX Designer</p>
+                <h1 class="text-3xl font-bold">Hi, I'm <span class="text-blue-500">Pravin</span><br> From India</h1>
             </div>
         </div>
     </div>
-</div>
 
-<!-----------------------------------services----------------------------------------->
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fas fa-crop-alt"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fab fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
-                <a href="#">Learn More</a>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-----------------------------------Porfolio----------------------------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work </h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Social Meadia App</h3>
-                    <p>The App connects you talented people around the world.
-                        Download it frim Play store.
-                    </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    <div id="about" class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2">
+                    <img src="Images/ADS_1364 copy.jpg" alt="About Me" class="w-full rounded-lg shadow-lg">
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The App connects you talented people around the world.
-                        Download it frim Play store.
-                    </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The App connects you talented people around the world.
-                        Download it frim Play store.
-                    </p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <div class="md:w-1/2 md:pl-8">
+                    <h1 class="text-2xl font-semibold mb-4">About Me</h1>
+                    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum placeat id dolores pariatur deserunt repellat officia hic, minus quidem doloremque cupiditate nesciunt vitae similique, numquam minima. Tempore tempora inventore sint mollitia in adipisci iure libero facere ut vitae eum voluptatem quisquam, veritatis maxime assumenda similique fuga dolores optio reprehenderit. Perspiciatis.</p>
+                    <div class="flex space-x-4 mb-4">
+                        <p class="tab-links active-link cursor-pointer" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links cursor-pointer" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links cursor-pointer" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul class="list-disc pl-5">
+                            <li><span class="font-bold">UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span class="font-bold">Web Development</span><br>Web App Development</li>
+                            <li><span class="font-bold">App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content hidden" id="Experience">
+                        <ul class="list-disc pl-5">
+                            <li><span class="font-bold">2022 - Current</span><br>UI/UX Design Training at Google</li>
+                            <li><span class="font-bold">2019-2021</span><br>Team Lead at Microsoft</li>
+                            <li><span class="font-bold">2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span class="font-bold">2016 - 2017</span><br>Internship at Ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content hidden" id="Education">
+                        <ul class="list-disc pl-5">
+                            <li><span class="font-bold">2022</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span class="font-bold">2019</span><br>MCA from MIT Mumbai</li>
+                            <li><span class="font-bold">2017</span><br>BCA from Pune University</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn"> See More</a>
     </div>
-</div>
-<!---------------------------- Contact--------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>Contact@example.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>+91 9112918201</p>
-                <div class="social-icons">
-                    <a href="https://www.Facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://www.Instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.Linkedin.com"><i class="fab fa-linkedin"></i></a>
+
+    <div id="services" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-semibold mb-6">My Services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fa-solid fa-code text-4xl mb-4"></i>
+                    <h2 class="text-xl font-semibold">Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
                 </div>
-                <a href="images/my-cv.pdf" Download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fas fa-crop-alt text-4xl mb-4"></i>
+                    <h2 class="text-xl font-semibold">UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <i class="fab fa-app-store text-4xl mb-4"></i>
+                    <h2 class="text-xl font-semibold">App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus omnis sunt laboriosam! Ab dignissimos nisi commodi minus modi iusto esse!</p>
+                    <a href="#" class="text-blue-500 hover:underline">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p> Copyright @ Pravin. Made With <i class="fas fa-heart"></i> by Pravin Dabhade </p>
+
+    <div id="portfolio" class="py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-semibold mb-6">My Work</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative">
+                    <img src="images/work-1.png" class="w-full rounded-lg shadow-lg" alt="Social Media App">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold">Social Media App</h3>
+                        <p>The App connects you talented people around the world. Download it from Play Store.</p>
+                        <a href="#" class="text-blue-400 hover:underline"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/work-2.png" class="w-full rounded-lg shadow-lg" alt="Music App">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold">Music App</h3>
+                        <p>The App connects you talented people around the world. Download it from Play Store.</p>
+                        <a href="#" class="text-blue-400 hover:underline"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/work-3.png" class="w-full rounded-lg shadow-lg" alt="Online Shopping App">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold">Online Shopping App</h3>
+                        <p>The App connects you talented people around the world. Download it from Play Store.</p>
+                        <a href="#" class="text-blue-400 hover:underline"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">See More</a>
+        </div>
     </div>
-</div>
 
-<script>
+    <div id="contact" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="contact-left md:w-1/2 mb-6 md:mb-0">
+                    <h1 class="text-2xl font-semibold mb-4">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9112918201</p>
+                    <div class="social-icons flex space-x-4 mt-4">
+                        <a href="https://www.Facebook.com" class="text-blue-600"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com" class="text-blue-600"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.Instagram.com" class="text-blue-600"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.Linkedin.com" class="text-blue-600"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Download CV</a>
+                </div>
+                <div class="contact-right md:w-1/2">
+                    <form name="submit-to-google-sheet" class="bg-white p-6 rounded-lg shadow-lg">
+                        <input type="text" name="Name" placeholder="Your Name" required class="w-full p-2 mb-4 border border-gray-300 rounded">
+                        <input type="email" name="Email" placeholder="Your Email" required class="w-full p-2 mb-4 border border-gray-300 rounded">
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="w-full p-2 mb-4 border border-gray-300 rounded"></textarea>
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Submit</button>
+                    </form>
+                    <span id="msg" class="text-green-500 mt-2"></span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4">
+            <p>Copyright @ Pravin. Made With <i class="fas fa-heart text-red-500"></i> by Pravin Dabhade</p>
+        </div>
+    </div>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-content");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
 
-    function opentab(tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.add("hidden");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.remove("hidden");
         }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.classList.remove("hidden");
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+        function closemenu() {
+            sidemenu.classList.add("hidden");
+        }
+    </script>
 
-</script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwOZPLLYBWiToLrcTCpGP6yx-YFvLrY5JJXpqH-tjd0KTpRgInKOvzafw9dj3q-sOEh/exec>';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
+</body>
 
-
-<script>
-    const scriptURL = '<https://script.google.com/macros/s/AKfycbwOZPLLYBWiToLrcTCpGP6yx-YFvLrY5JJXpqH-tjd0KTpRgInKOvzafw9dj3q-sOEh/exec>'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerHTML = "Message sent succussefully"
-                setTimeout(function () {
-                    msg.innerHTML = ""
-
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-</script>
+</html>
