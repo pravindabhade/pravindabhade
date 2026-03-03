@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi 👋 I'm Pravin Dabhade
 
-<!--
-**pravindabhade/pravindabhade** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Master Of Computer Application  
+🎯 Aspiring Data Scientist / ML Engineer  
 
-Here are some ideas to get you started:
+## About Me
+- Passionate about Data Science and AI
+- Learning Machine Learning and Deep Learning
+- Interested in Cybersecurity
+- Improving problem-solving skills daily
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Skills
+- Python
+- SQL
+- Pandas
+- NumPy
+- Scikit-learn
+- TensorFlow
+- Git & GitHub
+- Linux Basics
+
+## Connect With Me
+LinkedIn: https://www.linkedin.com/in/pravin20dabhade/
